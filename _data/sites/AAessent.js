@@ -1,5 +1,5 @@
 module.exports = {
-	name: "Essent", // optional, falls back to object key
+	name: "Essent.nl", // optional, falls back to object key
 	description: "Essent.nl pagina's",
 	options: {
 		// frequency: 60 * 23, 

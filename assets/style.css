@@ -11,7 +11,18 @@ body {
 footer {
 	font-style: italic;
 	text-align: center;
+	font-size: 9px;
+	display: flex;
+  	height: 100%;
+	  flex-direction: column;
+	  width: 100%;
+	  
 }
+
+.zachl {display: inline-block;
+	align-self: center;
+width: 650px;}
+
 code {
 	font-family: Monaco, monospace;
 }
