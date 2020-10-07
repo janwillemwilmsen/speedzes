@@ -15,7 +15,7 @@
 		<p class="speedlify-subhed">
 			Benchmark {{ sites[vertical].description or "web pages" }} in de tijd.
 			{%- if maxResults %}
-				Updates <em>vrijwel</em> elke dag. Alleen de laatste {{ maxResults }} resultaten{% if maxResults != 1 %}s{% endif %} (en het oudste resultaat) worden getoond.
+				Updates <em>vrijwel</em> elke dag. <br>Alleen de laatste {{ maxResults }} resultaten (en het oudste resultaat) worden getoond.
 				<br>Benchmark : alleen bruikbaar ter vergelijking. De waardes zijn uitspraak over snelheid, maar over de voorwaarden voor performance.
 			{% endif %}
 			
@@ -27,7 +27,7 @@
 		<footer class="footer">
 			<div class="zachl">
 			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/">GitHub</a>. Created by <a href="https://www.zachleat.com/">@zachleat</a>.
-			</div>
+			<br>samengesteld door jan-willem</div>
 		</footer>
 
 		<script defer src="{{ '/chartist.js' | url }}"></script>
