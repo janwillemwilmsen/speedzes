@@ -3,7 +3,7 @@ module.exports = {
 	description: "Essent.nl pagina's",
 	options: {
 		// frequency: 60 * 23, 
-		frequency: 1* 1000, 
+		frequency: 1* 100, 
 		// 24 hours
 		freshChrome: "site",
 	},
