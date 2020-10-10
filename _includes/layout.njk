@@ -35,6 +35,42 @@
 
 		{{ content | safe }}
 
+<style>
+#main {display: flex; flex-direction: row;  justify-content: center;border: solid 1px white;}
+.uitleg {border: solid 1px white; padding:10px;}
+
+@media screen and (max-width: 575px) {
+  #main {
+    flex-direction: column;
+  }
+}
+</style>
+ <h2 style=" text-align:center;"> Uitleg verschillende metrics van Lighthouse:</h2>
+ <div id="main" style="width:75%;   text-align:center;  margin: auto;">
+ 
+<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1; ">
+			<div class="uitleg"><img src="/img/lighthouse/Lighthouse-Cumulative-layout-Shift.png" style=" "/></div>
+			<div class="uitleg results-series-d"><img src="/img/lighthouse/Lighthouse-First-Contentful-paint.png"/></div>
+	
+		</div>
+		<div style="display: flex; flex-direction: column; flex-basis: 100%;  flex: 1;">
+		 		<div class="uitleg results-series-a"><img src="/img/lighthouse/Lighthouse-Largest-Contentful-paint.png"/></div>
+				<div class="uitleg results-series-e"><img src="/img/lighthouse/Lighthouse-Speed-index.png"/></div>
+			</div>
+
+		<div style="display: flex; flex-direction: column; flex-basis: 100%;  flex: 1;">
+		 
+				<div class="uitleg results-series-f"><img src="/img/lighthouse/Lighthouse-Time-to-Interactive.png"/></div>
+				<div class="uitleg results-series-c"><img src="/img/lighthouse/Lighthouse-Total-Blocking-Time.png"/></div>
+			</div>
+
+ </div>
+  <h2 style=" text-align:center;"> Weging verschillende onderdelen in totaalscore Lighthouse:</h2>
+
+<div style="width:100%;  text-align:center;> 
+		<div class="uitleg"><img src="/img/lighthouse/lighthouse-score.png"/></div>
+</div>
+
 		<footer class="footer">
 			<div class="zachl">
 			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/">GitHub</a>. Created by <a href="https://www.zachleat.com/">@zachleat</a>.
