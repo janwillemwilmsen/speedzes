@@ -2,8 +2,8 @@ module.exports = {
 	name: "energiedirect.nl", // optional, falls back to object key
 	description: "energiedirect.nl pagina's",
 	options: {
-		// frequency: 60 * 23, 
-		frequency: 1 * 100, 
+		frequency: 60 * 23, 
+		// frequency: 1 * 100, 
 		// 24 hours
 		freshChrome: "site",
 	},

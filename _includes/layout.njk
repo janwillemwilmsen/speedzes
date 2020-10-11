@@ -41,7 +41,7 @@
 		{{ content | safe }}
 
 <style>
-#main {height:600px;display: flex; flex-direction: row;  justify-content: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  grid-gap:8px;}
+#main {height:550px;display: flex; flex-direction: row;  justify-content: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  grid-gap:8px;}
 
 .uitleg {border: solid 1px white; padding:10px;  margin-bottom:8px; }
 
@@ -101,7 +101,7 @@
 				<div class="uitleg results-series-c">
 					<img alt="Total-Blocking-Time" class="light" src="/img/lighthouse/Lighthouse-Total-Blocking-Time.png"/>
 					<br>
-					De opgetelde tijd waarin scripts de interactieviteit blokkeren.
+					De opgetelde tijd waarin scripts de interactiviteit blokkeren.
 				</div>
 			</div>
 
@@ -109,7 +109,18 @@
   <h2 style=" text-align:center;"> Weging verschillende onderdelen in totaalscore Lighthouse:</h2>
 
 <div style="width:100%;  text-align:center;> 
-		<div class="uitleg"><img src="/img/lighthouse/lighthouse-score.png"/></div>
+		<div class="uitleg"><img src="/img/lighthouse/lighthouse-score.png"/>
+		
+		<br><br><br>
+		 <h2 style=" text-align:center;">Core Web Vitals</h2> 
+		 <div>volgens Google de belangrijkste performance metrics (in 2020): </div>
+		<ul style="list-style-type:none;"> 
+			<li>👉 LCP - <a href="https://web.dev/optimize-lcp/" target="_blank">optimaliseer tips</a></li> 
+			<li>👉 FID(TBT) - <a href="https://web.dev/optimize-fid/" target="_blank">optimaliseer tips</a></li>
+			<li>👉 CLS - <a href="https://web.dev/optimize-cls/" target="_blank">optimaliseer tips</a></li>
+		</div>
+
+		
 </div>
 
 		<footer class="footer">
