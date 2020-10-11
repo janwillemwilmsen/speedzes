@@ -9,6 +9,8 @@ module.exports = {
 	},
 	urls: [
 		"https://www.gaslicht.com/",
+		"https://www.essent.nl/",
+		"https://www.energiedirect.nl/",
 		"https://www.eneco.nl/",
 		"https://www.vattenfall.nl/",
 		"https://www.oxxio.nl/",
