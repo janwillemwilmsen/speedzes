@@ -21,7 +21,12 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-		<h1 class="speedlify-hed"><a href="{{ '/' | url }}">performance dashboard</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
+		<h1 class="speedlify-hed">
+	
+		
+		<a href="{{ '/' | url }}">	
+				<img src="/img/safari-pinned-tab.svg" style="width:80px;vertical-align: text-top;margin-right:5px;"/>performance dashboard
+		</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
 		<p class="speedlify-subhed">
 			Benchmark {{ sites[vertical].description or "web pages" }} in de tijd.
 			{%- if maxResults %}
@@ -36,8 +41,18 @@
 		{{ content | safe }}
 
 <style>
-#main {display: flex; flex-direction: row;  justify-content: center;border: solid 1px white;}
+#main {display: flex; flex-direction: row;  justify-content: center;border: solid 1px white;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
+
 .uitleg {border: solid 1px white; padding:10px;}
+
+
+img {
+	max-width:340px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 @media screen and (max-width: 575px) {
   #main {
@@ -46,10 +61,10 @@
 }
 </style>
  <h2 style=" text-align:center;"> Uitleg verschillende metrics van Lighthouse:</h2>
- <div id="main" style="width:75%;   text-align:center;  margin: auto;">
+ <div id="main" style=" width:90%;  text-align:center;  margin: auto;">
  
-<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1; ">
-			<div class="uitleg"><img src="/img/lighthouse/Lighthouse-Cumulative-layout-Shift.png" style=" "/></div>
+<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1; width:100%; ">
+			<div class="uitleg"><img src="/img/lighthouse/Lighthouse-Cumulative-layout-Shift.png" style="width:100% "/></div>
 			<div class="uitleg results-series-d"><img src="/img/lighthouse/Lighthouse-First-Contentful-paint.png"/></div>
 	
 		</div>
