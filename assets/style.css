@@ -22,7 +22,7 @@ footer {
 	/* display: flex; */
   	/* height: 100%; */
 	  /* flex-direction: column; */
-	  width: 400px;
+	  width: 50%;
 	  
 }
 
@@ -93,7 +93,18 @@ abbr {
 
 /* Speedlify specific styles */
 .speedlify-hed {
+	margin: -0.5rem;
+	/* margin-top:-10px; */
+	/* border: 20px white solid; */
+	/* margin: 0; */
+	/* background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);  */
+
+	background: rgb(230,1,103);
+	background: linear-gradient(90deg, rgba(230,1,103,1) 0%, rgba(51,61,71,1) 50%, rgba(95,182,36,1) 100%);
+
 	text-align: center;
+	padding:20px;
 	font-size: 2em;
 	text-transform: lowercase;
 	font-style: italic;
@@ -104,7 +115,7 @@ abbr {
 	}
 }
 .speedlify-subhed {
-	padding: 0 2em;
+	padding: 2em 2em;
 	margin: 0 auto;
 	max-width: 40em;
 	text-align: center;

@@ -21,12 +21,18 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-		<h1 class="speedlify-hed">
-	
+ 
+
+ <div>
+		<h1  class="speedlify-hed">
+ 
 		
 		<a href="{{ '/' | url }}">	
-				<img class="logo" src="/img/safari-pinned-tab.svg"/>performance dashboard
-		</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
+				<img class="logo" src="/img/safari-pinned-tab.svg"/>performance dashboard</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
+
+
+</div>
+
 		<p class="speedlify-subhed">
 			Benchmark {{ sites[vertical].description or "websites en pagina's" }} in de tijd.
 			{%- if maxResults %}
@@ -40,12 +46,16 @@
 
 		{{ content | safe }}
 
+		
+ 
+
+
 <style>
-#main {height:550px;display: flex; flex-direction: row;  justify-content: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  grid-gap:8px;}
+#main {display: flex; flex-direction: row;  justify-content: center; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  grid-gap:8px;}
 
 .uitleg {border: solid 1px white; padding:10px;  margin-bottom:8px; }
 
-.logo {width:80px;vertical-align: text-top;margin-right:5px;}
+.logo {width:80px; height:80px;vertical-align: text-top;margin-right:5px;}
 .light {
 	max-width:340px;
   width: 100%;
@@ -59,13 +69,14 @@
     flex-direction: column;
   }
 
-  .logo {width:40px;}
+  .logo {width:40px;height:40px;}
 }
 </style>
+<div style="clear:left;"></div>
  <h2 style=" text-align:center;"> <a name="uitleg"></a>Uitleg verschillende metrics van Lighthouse:</h2>
  <div id="main" style=" width:90%;  text-align:center;  margin: auto;">
  
-<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1; width:100%; ">
+<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1;   ">
 			<div class="uitleg">
 				<img alt="Cumulative-layout-Shift" class="light" src="/img/lighthouse/Lighthouse-Cumulative-layout-Shift.png" style="width:100% "/>
 				<br>
@@ -78,7 +89,7 @@
 			</div>
 	
 		</div>
-<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1; width:100%; grid-column-gap:8px;">
+<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1;   grid-column-gap:8px;">
 		 		<div class="uitleg results-series-a">
 				 	<img alt="Largest-Contentful-paint" class="light" src="/img/lighthouse/Lighthouse-Largest-Contentful-paint.png"/>
 					 <br>Hoe lang het duurt voordat de grootste afbeelding of grootste tekstblok zichtbaar is. 
@@ -90,7 +101,7 @@
 				</div>
 			</div>
 
-<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1; width:100%;   grid-column-gap:8px; ">
+<div style="display: flex-inline; flex-direction: column;  flex-basis: 80%;  flex: 1;     grid-column-gap:8px; ">
 		 
 				<div class="uitleg results-series-f">
 					<img alt="Time-to-Interactive" class="light" src="/img/lighthouse/Lighthouse-Time-to-Interactive.png"/>
@@ -118,6 +129,7 @@
 			<li>👉 LCP - <a href="https://web.dev/optimize-lcp/" target="_blank">optimaliseer tips</a></li> 
 			<li>👉 FID(TBT) - <a href="https://web.dev/optimize-fid/" target="_blank">optimaliseer tips</a></li>
 			<li>👉 CLS - <a href="https://web.dev/optimize-cls/" target="_blank">optimaliseer tips</a></li>
+			</ul>
 		</div>
 
 		
@@ -125,6 +137,8 @@
 
 		<footer class="footer">
 			<div class="zachl">
+					<a href="/" style="font-size:15px;color:gray;font-style:normal;">home</a><br><br>
+
 			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/">GitHub</a>. Created by <a href="https://www.zachleat.com/">@zachleat</a>.
 			<br>samengesteld door jan-willem</div>
 		</footer>
