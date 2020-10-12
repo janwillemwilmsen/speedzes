@@ -7,3 +7,5 @@ package-lock.json
 .env
 .cache
 build-hook.txt
+# Local Netlify folder
+.netlify
