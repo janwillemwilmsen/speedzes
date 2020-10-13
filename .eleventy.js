@@ -66,6 +66,7 @@ function getLighthouseTotal(entry) {
 }
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.addPassthroughCopy("images");
 	eleventyConfig.addFilter("shortHash", shortHash);
 
 	eleventyConfig.addFilter("repeat", function(str, times) {
