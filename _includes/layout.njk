@@ -29,8 +29,15 @@
 		
 		<a href="{{ '/' | url }}">	
 
-	
-				<img class="logo" src="/images/safari-pinned-tab.svg"/>performance dashboard</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
+<div style="display: flex; flex-direction: row;justify-content: center;">
+	<div>
+				<img class="logo" src="/images/safari-pinned-tab.svg"/>
+	</div>			
+	<div>			
+				performance dashboard
+	</div>			
+</div>
+				</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
 
 
 </div>
