@@ -24,21 +24,26 @@
  
 
  <div>
-		<h1  class="speedlify-hed">
+		<h1  class="speedlify-hed" style="border-bottom:1px solid gray;">
  
 		
 		<a href="{{ '/' | url }}">	
 
 <div style="display: flex; flex-direction: row;justify-content: center;">
 	<div>
-				<img class="logo" src="/images/safari-pinned-tab.svg"/>
+				<img class="logo" alt="Speedlify Essent-energiedirect" src="/images/safari-pinned-tab.svg"/>
 	</div>			
 	<div>			
 				performance dashboard
 	</div>			
 </div>
-				</a> {% if vertical %} : {{ sites[vertical].name or "websites" }}{% endif %}</h1>
-
+				</a> 
+				
+<div style="display: flex; flex-direction: row;justify-content: center;">
+	<div style="opacity: 0.8;">				
+				{% if vertical %} - {{ sites[vertical].name or "websites" }}{% endif %}</h1>
+</div>			
+</div>
 
 </div>
 
@@ -82,6 +87,13 @@
 }
 </style>
 <div style="clear:left;"></div>
+
+<hr   style=" border: 0;
+    height: 1px;
+    background: #444;
+   ">
+
+
  <h2 style=" text-align:center;"> <a name="uitleg"></a>Uitleg verschillende metrics van Lighthouse:</h2>
  <div id="main" style=" width:90%;  text-align:center;  margin: auto;">
  
@@ -135,9 +147,9 @@
 		 <h2 style=" text-align:center;">Core Web Vitals</h2> 
 		 <div>volgens Google de belangrijkste performance metrics (in 2020): </div>
 		<ul style="list-style-type:none;"> 
-			<li>👉 LCP - <a href="https://web.dev/optimize-lcp/" target="_blank">optimaliseer tips</a></li> 
-			<li>👉 FID(TBT) - <a href="https://web.dev/optimize-fid/" target="_blank">optimaliseer tips</a></li>
-			<li>👉 CLS - <a href="https://web.dev/optimize-cls/" target="_blank">optimaliseer tips</a></li>
+			<li>👉 LCP - <a href="https://web.dev/optimize-lcp/" target="_blank" rel="noreferrer">optimaliseer tips</a></li> 
+			<li>👉 FID(TBT) - <a href="https://web.dev/optimize-fid/" target="_blank" rel="noreferrer">optimaliseer tips</a></li>
+			<li>👉 CLS - <a href="https://web.dev/optimize-cls/" target="_blank" rel="noreferrer">optimaliseer tips</a></li>
 			</ul>
 		</div>
 
@@ -148,7 +160,7 @@
 			<div class="zachl">
 					<a href="/" style="font-size:15px;color:gray;font-style:normal;">home</a><br><br>
 
-			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/">GitHub</a>. Created by <a href="https://www.zachleat.com/">@zachleat</a>.
+			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/" rel="noreferrer">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/" rel="noreferrer">GitHub</a>. Created by <a href="https://www.zachleat.com/" rel="noreferrer">@zachleat</a>.
 			<br>samengesteld door jan-willem</div>
 		</footer>
 
