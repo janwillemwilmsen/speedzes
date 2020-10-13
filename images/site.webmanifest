@@ -1,6 +1,7 @@
 {
     "name": "SpeedlifyEssentenergiedirect",
     "short_name": "",
+    "start_url": "https://essent.netlify.app",
     "icons": [
         {
             "src": "/images/android-chrome-192x192.png",
