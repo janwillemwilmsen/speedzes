@@ -1,6 +1,6 @@
 module.exports = {
 	name: "eon", // optional, falls back to object key
-	description: "int Eon websites",
+	description: "Eon websites",
 	options: {
 		frequency: 60 * 23, 
 		// frequency: 1 * 100, 
