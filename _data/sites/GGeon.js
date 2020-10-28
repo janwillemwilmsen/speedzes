@@ -2,7 +2,8 @@ module.exports = {
 	name: "eon", // optional, falls back to object key
 	description: "Eon websites",
 	options: {
-		frequency: 60 * 23, 
+		frequency: 1 * 1, 
+		// frequency: 60 * 23, 
 		// frequency: 1 * 100, 
 		// 24 hours
 		freshChrome: "site",
