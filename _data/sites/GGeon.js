@@ -10,7 +10,7 @@ module.exports = {
 	urls: [
 		"https://www.eon.de/",
 		"https://www.eprimo.de/",
-		"https://e-mobility.ewe.de/",
+		// "https://e-mobility.ewe.de/",
 		"https://www.e-wie-einfach.de/",
 		"https://www.enviam.de/",
 		"https://www.lew.de/",
