@@ -25,7 +25,7 @@ module.exports = {
 		"https://www.eon.dk/",
 		"https://www.eon-italia.com/",
 		"https://www.eon.hu/",
-		"https://ker.elmuemasz.hu/",
+		"https://elmuemasz.hu/",
 		"https://www.eon.cz/",
 		"https://www.eon.ro/",
 		"https://www.essent.be/",
