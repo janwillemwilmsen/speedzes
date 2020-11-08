@@ -2,7 +2,7 @@ module.exports = {
 	name: "Vandebron.nl", // optional, falls back to object key
 	description: "Vandebron.nl pagina's",
 	options: {
-		frequency: 6000 * 2300, 
+		frequency: 60 * 23, 
 		// frequency: 1 * 100, 
 		// 24 hours
 		freshChrome: "site",
